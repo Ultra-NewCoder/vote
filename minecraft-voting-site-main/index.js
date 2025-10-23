@@ -172,6 +172,4 @@ app.get("*", (req, res) => {
 
 // Start server
 const SERVER_PORT = process.env.WEBSITE_PORT || 3000;
-app.listen(SERVER_PORT, () => {
-    console.log(`Server running on port http://localhost:${SERVER_PORT}`);
-});
+module.exports = app;
